@@ -1,6 +1,7 @@
 const cron = require('node-cron');
 const axios = require('axios');
 const { env } = require("./config/env")
+const { formatDate } = require("./utils/date")
 
 const chamarURLs = async() => {
     const URLs = {
