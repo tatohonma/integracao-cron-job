@@ -1,0 +1,26 @@
+# Estágio 1: Builder
+FROM node:18 AS builder
+
+WORKDIR /app
+COPY package*.json ./
+
+# Instalar dependências de produção
+RUN npm ci --only=production
+
+# Copiar arquivos necessários
+COPY src ./src
+
+# Estágio 2: Produção
+FROM node:18-alpine
+
+# Argumento e variável de ambiente para versão
+ARG SERVICE_VERSION
+ENV SERVICE_VERSION=${SERVICE_VERSION}
+
+WORKDIR /app
+
+# Copiar arquivos do builder
+COPY --from=builder --chown=appuser:appgroup /app .
+
+# Comando para executar o cron
+CMD ["npm", "start"]
