@@ -38,8 +38,8 @@ jobs:
       - name: Construir e publicar imagem
         run: |
           docker login --username ${{ secrets.DOCKER_USERNAME }} --password ${{ secrets.GH_PAT }} ghcr.io
-          docker build -f ./infra/docker/Dockerfile.prod --build-arg SERVICE_VERSION=${{ env.TAG }} --tag ghcr.io/maikonalexandre/pdv7-integracao-cron-job:${{ env.TAG }} .
-          docker push ghcr.io/maikonalexandre/pdv7-integracao-cron-job:${{ env.TAG }}
+          docker build -f ./infra/docker/Dockerfile.prod --build-arg SERVICE_VERSION=${{ env.TAG }} --tag ghcr.io/tatohonma/pdv7-integracao-cron-job:${{ env.TAG }} .
+          docker push ghcr.io/tatohonma/pdv7-integracao-cron-job:${{ env.TAG }}
 
         env:
           IMAGE_TAG: ${{ env.TAG }}
