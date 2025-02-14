@@ -1,9 +1,9 @@
-name: Generate image
+name: Generate image integracao-cron-job
 
 on:
   pull_request:
     branches:
-      - main # Branch de destino para gerenciar releases
+      - main
     types:
       - closed
 
