@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.3.0 (2026-03-13)
+
+### Features
+
+* update ci command ([1e6fac2](https://github.com/tatohonma/integracao-cron-job/commit/1e6fac2b7511bcb6b4a887b4f5f62ac9287844a3))
+
 ## 1.2.1 (2026-03-13)
 
 ## 1.2.0 (2026-03-13)
