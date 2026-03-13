@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.0 (2026-03-13)
+
+### Features
+
+* update image.yml ([cb992f7](https://github.com/tatohonma/integracao-cron-job/commit/cb992f716a53bad4351e4b4ce41103a447265826))
+
 ## 1.1.1 (2025-02-14)
 
 ## 1.1.0 (2025-02-11)
