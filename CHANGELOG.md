@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.4.0 (2026-03-13)
+
+### Features
+
+* remove github release ([a8cbc0d](https://github.com/tatohonma/integracao-cron-job/commit/a8cbc0d8465887fa36eb0200cd9c95a3d672106f))
+
 ## 1.3.1 (2026-03-13)
 
 ## 1.3.0 (2026-03-13)
