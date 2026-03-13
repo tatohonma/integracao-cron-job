@@ -5,6 +5,7 @@ const envSchema = z.object({
   NODE_ENV: z.enum(["dev", "test", "prod"]).default("dev"),
   BACKEND_INTEGRACAO_ANOTAAI_PDV7_URL: z.string().url().optional(),
   BACKEND_INTEGRACAO_KEETA_PDV7_URL: z.string().url().optional(),
+  BACKEND_INTEGRACAO_99FOOD_PDV7_URL: z.string().url().optional(),
 });
 
 const _env = envSchema.safeParse(process.env);
