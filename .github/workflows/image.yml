@@ -1,9 +1,11 @@
 name: Generate image integracao-cron-job
 
 on:
-  push:
+  pull_request:
     branches:
       - main
+    types:
+      - closed
 
 jobs:
   build_and_publish:
