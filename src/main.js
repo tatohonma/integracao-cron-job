@@ -6,6 +6,7 @@ const chamarURLs = async () => {
   const URLs = {
     backend_integracao_pdv7_anotaai: env.BACKEND_INTEGRACAO_ANOTAAI_PDV7_URL,
     backend_integracao_pdv7_keeta: env.BACKEND_INTEGRACAO_KEETA_PDV7_URL,
+    backend_integracao_pdv7_99food: env.BACKEND_INTEGRACAO_99FOOD_PDV7_URL,
   };
 
   for (const [key, url] of Object.entries(URLs)) {
